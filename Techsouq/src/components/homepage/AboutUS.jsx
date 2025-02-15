@@ -1,5 +1,5 @@
 import React from "react";
-import Group from "../assets/Images/medium-shot-people-working-office 1.png";
+import Group from "/src/assets/Images/medium-shot-people-working-office 1.png";
 
 const AboutUS = () => {
   return (
@@ -60,8 +60,6 @@ const AboutUS = () => {
         {/* img */}
         <div className="md:w-1/3">
           <img src={Group} alt="" className="rounded-xl" />
-          
-           
         </div>
       </div>
     </div>

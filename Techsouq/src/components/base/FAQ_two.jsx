@@ -4,22 +4,32 @@ import Image2 from "/src/assets/Images/5.png";
 import Image3 from "/src/assets/Images/6.png";
 const FAQ_two = () => {
   return (
-    <div className="container mx-auto px-4 py-16">
-      <div className="flex justify-center">
-        <span
-          className="text-xl text-center text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] mb-8 border-2"
+    <div
+      className="container mx-auto px-4 py-16 font-poppins"
+      style={{ fontFamily: "Poppins, sans-serif" }}
+    >
+      <div className="flex justify-center align-center">
+        <h4
+          className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2"
           style={{
-            fontWeight: "600px",
-            fontSize: "16px",
-            padding: "10px 30px 10px 30px",
-            borderRadius: "1200px",
-            borderImage: "1 linear-gradient(to right, #9384Ef, #312EFE)",
+            position: "relative",
           }}
         >
-          What We Say
-        </span>
+          What We Says
+          <span
+            className="absolute inset-0 rounded-full"
+            style={{
+              background: "linear-gradient(90deg, #9384Ef, #312EFE)",
+              WebkitMask:
+                "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+              WebkitMaskComposite: "xor",
+              maskComposite: "exclude",
+              padding: "1px",
+            }}
+          ></span>
+        </h4>
       </div>
-      <h2 className="text-3xl font-bold text-center mb-8">
+      <h2 className="text-4xl font-semibold text-center mb-6 mt-5">
         Frequently Asked Questions
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-9">

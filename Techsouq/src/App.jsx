@@ -14,6 +14,11 @@ import Header from "./components/base/Header.jsx";
 import FAQ_One from "./components/base/FAQ_One.jsx";
 import Footer from "./components/base/Footer.jsx";
 import FAQ_two from "./components/base/FAQ_two.jsx";
+// import Others from "./components/homepage/Others.jsx";
+import Home from "./components/homepage/Home.jsx";
+import AboutUS from "./components/homepage/AboutUS.jsx";
+import Services from "./components/homepage/Services.jsx";
+import Choose from "./components/homepage/ChooseUS.jsx";
 function App() {
   return (
     <>
@@ -29,6 +34,11 @@ function App() {
 
       <ContactUS />
       <Others /> */}
+      {/* <Others /> */}
+      <Home />
+      <AboutUS />
+      <Services />
+      <Choose />
       <FAQ_One />
       <FAQ_two />
       <Footer />

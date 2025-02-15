@@ -1,12 +1,12 @@
 import React from "react";
-import group from "../assets/Images/2.png";
-import four from "../assets/Images/4.png";
-import circlec from "../assets/Images/Ellipse 5.png";
-import Man from "../assets/Images/man_two.png";
-import back from "../assets/Images/back.png";
-import carone from "../assets/Images/4.png";
-import cartwo from "../assets/Images/5.png";
-import carthree from "../assets/Images/6.png";
+import group from "/src/assets/Images/2.png";
+import four from "/src/assets/Images/4.png";
+import circlec from "/src/assets/Images/Ellipse 5.png";
+import Man from "/src/assets/Images/man_two.png";
+import back from "/src/assets/Images/back.png";
+import carone from "/src/assets/Images/4.png";
+import cartwo from "/src/assets/Images/5.png";
+import carthree from "/src/assets/Images/6.png";
 
 function Others() {
   return (
