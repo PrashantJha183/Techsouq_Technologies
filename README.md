@@ -39,7 +39,7 @@ Before setting up the environment, ensure the following tools and software are i
 - Clone the project repository:
   ```bash
   git clone https://github.com/your-username/Techsouq_Technologies.git
-  cd Techsouq
+  cd Techsouq       
   ```
 
 ### 2. Setting Up Upstream for Your Fork
