@@ -314,39 +314,39 @@ function Services() {
           </div>
 
           <div className="flex justify-center">
-              <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4">
-                Contact US Now
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clipPath="url(#clip0_55_1110)">
-                    <path
-                      d="M0.953125 9.6377H16.7865"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_55_1110">
-                      <rect width="20" height="20" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-            </div>
+            <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4">
+              Contact US Now
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clipPath="url(#clip0_55_1110)">
+                  <path
+                    d="M0.953125 9.6377H16.7865"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_55_1110">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>
