@@ -160,29 +160,6 @@ const Home = () => {
                 </defs>
               </svg>
             </div>
-            {/* <div
-              className="absolute w-full h-full flex justify-center items-center z-100 "
-              style={{
-                bottom: "30%",
-                right: "50%",
-              }}
-            >
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.9976 4.50757L6.74756 12.76L2.99756 9.00891"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div> */}
           </div>
 
           <div
@@ -780,3 +757,29 @@ const Home = () => {
 };
 
 export default Home;
+
+{
+  /* <div
+              className="absolute w-full h-full flex justify-center items-center z-100 "
+              style={{
+                bottom: "30%",
+                right: "50%",
+              }}
+            >
+              <svg
+                width="18"
+                height="19"
+                viewBox="0 0 18 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.9976 4.50757L6.74756 12.76L2.99756 9.00891"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div> */
+}
