@@ -118,7 +118,7 @@ const Footer = () => {
         {/* Footer Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center text-center">
           <p className="text-gray-600 text-sm order-2 md:order-1 w-full md:w-auto">
-            Copyright © 2024{" "}
+            Copyright © 2025{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#9384FE] to-[#312EFE] font-bold">
               TECHSOUQ{" "}
             </span>

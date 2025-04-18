@@ -10,19 +10,21 @@ import "./App.css";
 // import ContactUS from "./pages/ContactUs.jsx";
 // import Last_page from "./pages/Last_page.jsx";
 // import Others from "./pages/Others.jsx";
-import Header from "./components/base/Header.jsx";
-import FAQ_One from "./components/base/FAQ_One.jsx";
-import Footer from "./components/base/Footer.jsx";
-import FAQ_two from "./components/base/FAQ_two.jsx";
+// import Header from "./components/base/Header.jsx";
+// import FAQ_One from "./components/base/FAQ_One.jsx";
+// import Footer from "./components/base/Footer.jsx";
+// import FAQ_two from "./components/base/FAQ_two.jsx";
 // import Others from "./components/homepage/Others.jsx";
-import Home from "./components/homepage/Home.jsx";
-import AboutUS from "./components/homepage/AboutUS.jsx";
-import Services from "./components/homepage/Services.jsx";
-import Choose from "./components/homepage/ChooseUS.jsx";
+// import Home from "./components/homepage/Home.jsx";
+// import AboutUS from "./components/homepage/AboutUS.jsx";
+// import Services from "./components/homepage/Services.jsx";
+// import Choose from "./components/homepage/ChooseUS.jsx";
+import HomepageView from "./views/HomepageView";
 function App() {
   return (
     <>
-      <Header />
+      <HomepageView />
+      {/* <Header /> */}
       {/* <Home />
       <AboutUS />
       <Services />
@@ -35,13 +37,13 @@ function App() {
       <ContactUS />
       <Others /> */}
       {/* <Others /> */}
-      <Home />
+      {/* <Home />
       <AboutUS />
       <Services />
       <Choose />
       <FAQ_One />
       <FAQ_two />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }

@@ -2,14 +2,33 @@ import React from "react";
 
 function Services() {
   return (
-    <div className="bg-slate-200">
+    <div className="bg-slate-200" style={{ fontFamily: "Poppins, sans-serif" }}>
       <div className="container mx-auto px-4 py-16">
-        <h2 className="font-semibold text-xl text-center text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] mb-8">
-          Our Services
-        </h2>
-        <h2 className="text-3xl font-bold text-center mb-12">
+        <div className="flex justify-center align-center">
+          <h4
+            className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
+            style={{
+              position: "relative",
+            }}
+          >
+            Our Services
+            <span
+              className="absolute inset-0 rounded-full"
+              style={{
+                background: "linear-gradient(90deg, #9384Ef, #312EFE)",
+                WebkitMask:
+                  "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                WebkitMaskComposite: "xor",
+                maskComposite: "exclude",
+                padding: "1px",
+              }}
+            ></span>
+          </h4>
+        </div>
+        <h2 className="text-[60px] font-bold text-center mb-12">
           Our Core Services
         </h2>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="bg-white rounded-lg shadow-md p-8">
             <div className="flex justify-center mb-4">
@@ -312,41 +331,40 @@ function Services() {
               </div>
             </a>
           </div>
-
-          <div className="flex justify-center">
-            <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4">
-              Contact US Now
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_55_1110)">
-                  <path
-                    d="M0.953125 9.6377H16.7865"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_55_1110">
-                    <rect width="20" height="20" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-          </div>
+        </div>
+        <div className="flex justify-center items-center w-100 mt-10">
+          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center items-center gap-4">
+            Contact US Now
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clipPath="url(#clip0_55_1110)">
+                <path
+                  d="M0.953125 9.6377H16.7865"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_55_1110">
+                  <rect width="20" height="20" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
         </div>
       </div>
     </div>

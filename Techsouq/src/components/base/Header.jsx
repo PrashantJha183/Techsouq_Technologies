@@ -138,7 +138,7 @@ const Header = () => {
               : "max-h-0 opacity-0 overflow-hidden"
           }`}
         >
-          <div className="flex flex-col bg-white shadow-md rounded-md p-4 space-y-4 mt-3">
+          <div className="flex flex-col rounded-md p-4 space-y-4 mt-3">
             {[
               "Home",
               "About",
