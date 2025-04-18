@@ -1,65 +1,95 @@
 import React from "react";
-import Group from "/src/assets/Images/medium-shot-people-working-office 1.png";
+import { ArrowRight, Check } from "lucide-react";
+import Group from "/src/assets/Images/image.png";
+import one from "/src/assets/Images/1.png";
 
 const AboutUS = () => {
   return (
-    <div className="max-w-screen-2xl container mx-auto xl:px-24 ">
-      <div className="py-20 flex flex-col md:flex-row-reverse items-center justify-between gap-2">
-        {/* texts */}
-        <div className="md:w-1/2 px-2 space-y-4">
-          <h2 className="font-semibold btn bg-gradient-to-r inline-block text-transparent bg-clip-textbg-gradient-to-r from-[#9384Ef] to-[#312EFE] bg-clip-text px-9 py-3 rounded-t-lg text-xl">
-            About Us
-          </h2>
-          <div className="text-5xl font-bold">
-            Driven by Creativity,Defined by Results
+    <div
+      className="max-w-screen-2xl container mx-auto px-4 sm:px-6 xl:px-24"
+      style={{ fontFamily: "Poppins, sans-serif" }}
+    >
+      <div className="py-20 flex flex-col md:flex-row-reverse md:items-center md:justify-between gap-6 text-center md:text-left">
+        {/* Texts */}
+        <div className="md:w-1/2 px-2 space-y-4 flex flex-col items-center md:items-start">
+          <div className="flex">
+            <h4
+              className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
+              style={{
+                position: "relative",
+              }}
+            >
+              About Us
+              <span
+                className="absolute inset-0 rounded-full"
+                style={{
+                  background: "linear-gradient(90deg, #9384Ef, #312EFE)",
+                  WebkitMask:
+                    "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+                  WebkitMaskComposite: "xor",
+                  maskComposite: "exclude",
+                  padding: "1px",
+                }}
+              ></span>
+            </h4>
+          </div>
+          <div className="text-4xl sm:text-5xl font-bold">
+            Driven by Creativity, Defined by Results
           </div>
           <p className="text-[#4A4A4A] text-base">
-            At Techsouq, we specialize in turning visions into reality.With a
-            passion for design and innovation,we deliver cutting-edge solutions
-            that empower businesses to thrive in the digital age.From crafting
-            seamless user experiences to developing impactful web platforms,our
+            At Techsouq, we specialize in turning visions into reality. With a
+            passion for design and innovation, we deliver cutting-edge solutions
+            that empower businesses to thrive in the digital age. From crafting
+            seamless user experiences to developing impactful web platforms, our
             mission is to create meaningful connections between brands and their
             audiences.
           </p>
-          <div className="font-bold py-4">
+          <div className="py-4">
             Together, let's redefine what's possible in the digital world.
           </div>
-          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4 ">
-            Contact US Now
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0_55_1110)">
-                <path
-                  d="M0.953125 9.6377H16.7865"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_55_1110">
-                  <rect width="20" height="20" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
+          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4">
+            Contact Us Now
+            <ArrowRight size={20} color="white" />
           </button>
         </div>
-        {/* img */}
-        <div className="md:w-1/3">
-          <img src={Group} alt="" className="rounded-xl" />
+
+        {/* Image composition */}
+        <div className="md:w-1/2 relative flex justify-center items-center w-full">
+          {/* Group image (base) */}
+          <img
+            src={Group}
+            alt="group"
+            className="rounded-xl w-full max-w-[400px]"
+          />
+
+          {/* Overlapping badge on Group image */}
+          <div className="absolute top-20 left-10 flex items-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md">
+            <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] flex items-center justify-center">
+              <Check size={14} color="white" />
+            </div>
+            <span className="text-xs sm:text-sm font-semibold">
+              We provide best service
+            </span>
+          </div>
+
+          {/* Overlapping image with badge */}
+          <div className="absolute bottom-[-50px] left-[40px] sm:left-[60px] bg-white p-2 rounded-xl shadow-lg">
+            {/* Badge on 'one' image */}
+            <div className="absolute bottom-[60px] left-[10px] sm:bottom-[80px] sm:left-[100px] flex items-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md">
+              <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] flex items-center justify-center">
+                <Check size={14} color="white" />
+              </div>
+              <span className="text-xs sm:text-sm font-semibold">
+                Your work is our priority
+              </span>
+            </div>
+
+            <img
+              src={one}
+              alt="overlay"
+              className="rounded-lg w-[200px] sm:w-[300px] h-auto"
+            />
+          </div>
         </div>
       </div>
     </div>
