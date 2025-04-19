@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "/src/assets/Images/logo.png";
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 1024) {
-        setIsOpen(false); // Close mobile menu when resizing above 1024px
+        setIsOpen(false);
         setIsMobile(false);
       } else {
         setIsMobile(true);
@@ -19,57 +20,53 @@ const Header = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const navLinks = [
+    { name: "Home", path: "/" },
+    { name: "About", path: "/about" },
+    { name: "Service", path: "/service" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Case Study", path: "/case-study" },
+    { name: "Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" },
+  ];
+  console.log("helloworld");
   return (
     <nav
       className="bg-transparent px-4 py-4 shadow-md"
       style={{ fontFamily: "Poppins, sans-serif" }}
     >
       <div className="container mx-auto flex justify-between items-center">
-        {/* Logo */}
-        <a href="/" className="flex items-center text-xl font-bold">
+        <Link to="/" className="flex items-center text-xl font-bold">
           <img
             src={logo}
             alt="Techsouq Technologies"
             style={{ width: "245px", height: "60px" }}
           />
-        </a>
+        </Link>
 
-        {/* Desktop Menu (Visible from 1025px onwards) */}
         <div className="hidden lg:flex space-x-8">
-          {[
-            "Home",
-            "About",
-            "Service",
-            "Pricing",
-            "Case Study",
-            "Blog",
-            "Contact",
-          ].map((item, index) => (
-            <a
+          {navLinks.map((item, index) => (
+            <Link
               key={index}
-              href="/"
+              to={item.path}
               className={`font-normal text-[18px] ${
-                item === "Home"
+                item.name === "Home"
                   ? "text-transparent bg-clip-text bg-gradient-to-r from-[#9384FE] to-[#312EFE]"
                   : "text-black hover:text-[#312EFE]"
               }`}
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </div>
 
-        {/* Contact Button - Desktop (Visible from 1025px onwards) */}
         <div className="hidden lg:flex">
-          <button className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] font-semibold text-white px-6 py-3 rounded-md flex items-center gap-2 shadow-lg hover:scale-105 transition-transform">
+          <Link
+            to="/contact"
+            className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] font-semibold text-white px-6 py-3 rounded-md flex items-center gap-2 shadow-lg hover:scale-105 transition-transform"
+          >
             Contact Us Now
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path
                 d="M0.953125 9.6377H16.7865"
                 stroke="white"
@@ -85,10 +82,9 @@ const Header = () => {
                 strokeLinejoin="round"
               />
             </svg>
-          </button>
+          </Link>
         </div>
 
-        {/* Hamburger Icon - Mobile (Visible from 0px to 1024px) */}
         {isMobile && (
           <div className="lg:hidden">
             <button
@@ -129,7 +125,6 @@ const Header = () => {
         )}
       </div>
 
-      {/* Mobile Menu (Visible from 0px to 1024px) */}
       {isMobile && (
         <div
           className={`lg:hidden transition-all duration-300 ease-in-out ${
@@ -139,38 +134,28 @@ const Header = () => {
           }`}
         >
           <div className="flex flex-col rounded-md p-4 space-y-4 mt-3">
-            {[
-              "Home",
-              "About",
-              "Service",
-              "Pricing",
-              "Case Study",
-              "Blog",
-              "Contact",
-            ].map((item, index) => (
-              <a
+            {navLinks.map((item, index) => (
+              <Link
                 key={index}
-                href="/"
+                to={item.path}
+                onClick={() => setIsOpen(false)}
                 className={`font-semibold text-[18px] text-center ${
-                  item === "Home"
+                  item.name === "Home"
                     ? "text-transparent bg-clip-text bg-gradient-to-r from-[#9384FE] to-[#312EFE]"
                     : "text-black hover:text-[#312EFE]"
                 }`}
               >
-                {item}
-              </a>
+                {item.name}
+              </Link>
             ))}
 
-            {/* Contact Button - Mobile */}
-            <button className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] font-semibold text-white px-6 py-3 rounded-md shadow-lg hover:scale-105 transition-transform flex justify-evenly items-center">
+            <Link
+              to="/contact"
+              onClick={() => setIsOpen(false)}
+              className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] font-semibold text-white px-6 py-3 rounded-md shadow-lg hover:scale-105 transition-transform flex justify-evenly items-center"
+            >
               Contact Us Now
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <path
                   d="M0.953125 9.6377H16.7865"
                   stroke="white"
@@ -186,7 +171,7 @@ const Header = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
       )}
