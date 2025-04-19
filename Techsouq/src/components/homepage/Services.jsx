@@ -1,15 +1,18 @@
 import React from "react";
+import { FiLayout } from "react-icons/fi";
+import { FaCode } from "react-icons/fa";
+import { BiShapePolygon } from "react-icons/bi";
+import { AiOutlineArrowRight } from "react-icons/ai";
+import arrow from "/src/assets/Images/arrow-right.png";
 
 function Services() {
   return (
     <div className="bg-slate-200" style={{ fontFamily: "Poppins, sans-serif" }}>
       <div className="container mx-auto px-4 py-16">
-        <div className="flex justify-center align-center">
+        <div className="flex justify-center items-center">
           <h4
-            className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
-            style={{
-              position: "relative",
-            }}
+            className="relative inline-block text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
+            style={{ position: "relative" }}
           >
             Our Services
             <span
@@ -25,346 +28,122 @@ function Services() {
             ></span>
           </h4>
         </div>
-        <h2 className="text-[60px] font-bold text-center mb-12">
+        <h2 className="text-[60px] font-semibold text-center mb-12">
           Our Core Services
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-          <div className="bg-white rounded-lg shadow-md p-8">
-            <div className="flex justify-center mb-4">
-              <svg
-                className="w-12 h-12 text-blue-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M16.71 7.04L12.5 12.23 8.29 7.04" />
-                <path d="M15 17l-7-7 7-7" />
-                <path d="M12 15l-7 7 7 7" />
-              </svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 justify-center">
+          {/* UI/UX Design */}
+          <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
+              <FiLayout size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">UI/UX Design</h3>
-            <p className="text-gray-600 text-center">
+            <h3 className="text-3xl font-semibold mt-6 mb-2">UI/UX Design</h3>
+            <p className="text-gray-600 text-lg">
               We create user-centric designs that prioritize functionality and
               aesthetics. Our intuitive interfaces and seamless user experiences
               ensure that your audience stays engaged and connected with your
               brand.
             </p>
             <a href="#" className="py-4 flex justify-center">
-              <div
-                size="sm"
-                variant="text"
-                className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent bg-clip-textbg-gradient-to-r from-[#9384Ef] to-[#312EFE] bg-clip-text"
-              >
+              <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
                 Learn More
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.46913 14.404L15.5632 4.76231"
-                    stroke="url(#paint0_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.78125 4.44434H16.1146V12.7777"
-                    stroke="url(#paint1_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_55_671"
-                      x1="8.76794"
-                      y1="7.75292"
-                      x2="13.9815"
-                      y2="14.5991"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_55_671"
-                      x1="10.4369"
-                      y1="7.10001"
-                      x2="14.9699"
-                      y2="12.7777"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="w-5 h-5 transform rotate-[-40deg]"
+                />
               </div>
             </a>
+            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[#9384Ef] to-[#312EFE] rounded-t-full"></div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex items-center justify-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-blue-500"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M10 2a8 8 0 100 16 8 8 0 0 0 0-16zm1.88 10.18A10.01 10.01 0 0 1 10 15a10.01 10.01 0 0 1-5.5-2.22l.27.67c.33.87.76 1.58 1.41 2.16l.94.47c.75.37 1.57.69 2.39 1.02l.61.22a.8.8 0 0 0 .92 0l.61-.22c.82-.33 1.64-.65 2.39-1.02l.94-.47c.65-.58 1.08-1.29 1.41-2.16l.27-.67A10.01 10.01 0 0 1 11.88 12.18z" />
-              </svg>
+
+          {/* Web Development */}
+          <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
+              <FaCode size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">
+            <h3 className="text-3xl font-semibold mt-6 mb-2">
               Web Development
             </h3>
-            <p className="text-gray-600 text-center">
+            <p className="text-gray-600 text-lg">
               Our expert developers bring your ideas to life with responsive,
               fast, and scalable websites. From e-commerce platforms to custom
               web applications, we build solutions tailored to your business
               needs.
             </p>
             <a href="#" className="py-4 flex justify-center">
-              <div
-                size="sm"
-                variant="text"
-                className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent bg-clip-textbg-gradient-to-r from-[#9384Ef] to-[#312EFE] bg-clip-text"
-              >
+              <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
                 Learn More
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.46913 14.404L15.5632 4.76231"
-                    stroke="url(#paint0_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.78125 4.44434H16.1146V12.7777"
-                    stroke="url(#paint1_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_55_671"
-                      x1="8.76794"
-                      y1="7.75292"
-                      x2="13.9815"
-                      y2="14.5991"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_55_671"
-                      x1="10.4369"
-                      y1="7.10001"
-                      x2="14.9699"
-                      y2="12.7777"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="w-5 h-5 transform rotate-[-40deg]"
+                />
               </div>
             </a>
+            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[#9384Ef] to-[#312EFE] rounded-t-full"></div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex items-center justify-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-blue-500"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M10 2a8 8 0 100 16 8 8 0 0 0 0-16zm1.88 10.18A10.01 10.01 0 0 1 10 15a10.01 10.01 0 0 1-5.5-2.22l.27.67c.33.87.76 1.58 1.41 2.16l.94.47c.75.37 1.57.69 2.39 1.02l.61.22a.8.8 0 0 0 .92 0l.61-.22c.82-.33 1.64-.65 2.39-1.02l.94-.47c.65-.58 1.08-1.29 1.41-2.16l.27-.67A10.01 10.01 0 0 1 11.88 12.18z" />
-              </svg>
+
+          {/* Logo Design */}
+          <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
+              <BiShapePolygon size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">Logo Design</h3>
-            <p className="text-gray-600 text-center">
+            <h3 className="text-3xl font-semibold mt-6 mb-2">Logo Design</h3>
+            <p className="text-gray-600 text-lg">
               Your logo is the face of your brand, and we craft logos that leave
               lasting impressions. Combining creativity and strategy, we design
               visual identities that resonate with your target audience.
             </p>
             <a href="#" className="py-4 flex justify-center">
-              <div
-                size="sm"
-                variant="text"
-                className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent bg-clip-textbg-gradient-to-r from-[#9384Ef] to-[#312EFE] bg-clip-text"
-              >
+              <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
                 Learn More
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.46913 14.404L15.5632 4.76231"
-                    stroke="url(#paint0_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.78125 4.44434H16.1146V12.7777"
-                    stroke="url(#paint1_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_55_671"
-                      x1="8.76794"
-                      y1="7.75292"
-                      x2="13.9815"
-                      y2="14.5991"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_55_671"
-                      x1="10.4369"
-                      y1="7.10001"
-                      x2="14.9699"
-                      y2="12.7777"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="w-5 h-5 transform rotate-[-40deg]"
+                />
               </div>
             </a>
+            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[#9384Ef] to-[#312EFE] rounded-t-full"></div>
           </div>
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <div className="flex items-center justify-center mb-4">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12 text-blue-500"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path d="M10 2a8 8 0 100 16 8 8 0 0 0 0-16zm1.88 10.18A10.01 10.01 0 0 1 10 15a10.01 10.01 0 0 1-5.5-2.22l.27.67c.33.87.76 1.58 1.41 2.16l.94.47c.75.37 1.57.69 2.39 1.02l.61.22a.8.8 0 0 0 .92 0l.61-.22c.82-.33 1.64-.65 2.39-1.02l.94-.47c.65-.58 1.08-1.29 1.41-2.16l.27-.67A10.01 10.01 0 0 1 11.88 12.18z" />
-              </svg>
+
+          {/* Another Service */}
+          <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
+            <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
+              <BiShapePolygon size={28} className="text-white" />
             </div>
-            <h3 className="text-xl font-bold mb-2 text-center">Consulting</h3>
-            <p className="text-gray-600 text-center">
-              Your logo is the face of your brand, and we craft logos that leave
-              lasting impressions. Combining creativity and strategy, we design
-              visual identities that resonate with your target audience.
+            <h3 className="text-3xl font-semibold mt-6 mb-2">
+              Another Service
+            </h3>
+            <p className="text-gray-600 text-lg">
+              We offer a wide range of additional services tailored to your
+              needs, ensuring your business thrives in every aspect.
             </p>
             <a href="#" className="py-4 flex justify-center">
-              <div
-                size="sm"
-                variant="text"
-                className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent bg-clip-textbg-gradient-to-r from-[#9384Ef] to-[#312EFE] bg-clip-text"
-              >
+              <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
                 Learn More
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.46913 14.404L15.5632 4.76231"
-                    stroke="url(#paint0_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M7.78125 4.44434H16.1146V12.7777"
-                    stroke="url(#paint1_linear_55_671)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_55_671"
-                      x1="8.76794"
-                      y1="7.75292"
-                      x2="13.9815"
-                      y2="14.5991"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                    <linearGradient
-                      id="paint1_linear_55_671"
-                      x1="10.4369"
-                      y1="7.10001"
-                      x2="14.9699"
-                      y2="12.7777"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <img
+                  src={arrow}
+                  alt="arrow"
+                  className="w-5 h-5 transform rotate-[-40deg]"
+                />
               </div>
             </a>
+            <div className="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-[#9384Ef] to-[#312EFE] rounded-t-full"></div>
           </div>
         </div>
-        <div className="flex justify-center items-center w-100 mt-10">
-          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center items-center gap-4">
-            Contact US Now
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clipPath="url(#clip0_55_1110)">
-                <path
-                  d="M0.953125 9.6377H16.7865"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_55_1110">
-                  <rect width="20" height="20" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+
+        {/* Contact Us Button */}
+        <div className="flex justify-center mt-12">
+          <a
+            href="#"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-[#9384Ef] to-[#312EFE] text-white py-3 px-6 rounded-md hover:bg-[#1e1dbd] transition-all text-sm font-bold"
+          >
+            <span>Contact Us Now</span>
+            <AiOutlineArrowRight className="ml-2" size={20} />
+          </a>
         </div>
       </div>
     </div>

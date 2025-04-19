@@ -14,7 +14,7 @@ const AboutUS = () => {
         <div className="md:w-1/2 px-2 space-y-4 flex flex-col items-center md:items-start">
           <div className="flex">
             <h4
-              className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
+              className="relative inline-block text-lg text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2 font-semibold"
               style={{
                 position: "relative",
               }}
@@ -33,10 +33,10 @@ const AboutUS = () => {
               ></span>
             </h4>
           </div>
-          <div className="text-4xl sm:text-5xl font-bold">
+          <div className="text-6xl sm:text-5xl font-semibold">
             Driven by Creativity, Defined by Results
           </div>
-          <p className="text-[#4A4A4A] text-base">
+          <p className="text-[#4A4A4A] text-lg">
             At Techsouq, we specialize in turning visions into reality. With a
             passion for design and innovation, we deliver cutting-edge solutions
             that empower businesses to thrive in the digital age. From crafting
@@ -44,10 +44,10 @@ const AboutUS = () => {
             mission is to create meaningful connections between brands and their
             audiences.
           </p>
-          <div className="py-4">
+          <div className="py-4 text-lg">
             Together, let's redefine what's possible in the digital world.
           </div>
-          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4">
+          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4 text-sm h-6xl w-10xl">
             Contact Us Now
             <ArrowRight size={20} color="white" />
           </button>
@@ -75,7 +75,7 @@ const AboutUS = () => {
           {/* Overlapping image with badge */}
           <div className="absolute bottom-[-50px] left-[40px] sm:left-[60px] bg-white p-2 rounded-xl shadow-lg">
             {/* Badge on 'one' image */}
-            <div className="absolute bottom-[60px] left-[10px] sm:bottom-[80px] sm:left-[100px] flex items-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md">
+            <div className="relative top-[200px] left-[250px] sm:bottom-[80px] sm:left-[250px] inline-flex items-center justify-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md w-[230px] text-nowrap">
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] flex items-center justify-center">
                 <Check size={14} color="white" />
               </div>
