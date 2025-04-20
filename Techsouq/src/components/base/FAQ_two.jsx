@@ -2,19 +2,15 @@ import React from "react";
 import Image1 from "/src/assets/Images/4.png";
 import Image2 from "/src/assets/Images/5.png";
 import Image3 from "/src/assets/Images/6.png";
+
 const FAQ_two = () => {
   return (
     <div
       className="container mx-auto px-4 py-16 font-poppins"
       style={{ fontFamily: "Poppins, sans-serif" }}
     >
-      <div className="flex justify-center align-center">
-        <h4
-          className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2"
-          style={{
-            position: "relative",
-          }}
-        >
+      <div className="flex justify-center items-center">
+        <h4 className="relative inline-block text-xl text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] px-4 py-2">
           What We Says
           <span
             className="absolute inset-0 rounded-full"
@@ -33,313 +29,78 @@ const FAQ_two = () => {
         Frequently Asked Questions
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-9">
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <img src={Image1} alt="" />
-          <h3 className="text-2xl font-bold mb-4">
-            Transforming User Interactions into a Brand
-          </h3>
-          <div className="flex items-center space-x-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+        {[Image1, Image2, Image3].map((image, index) => (
+          <div key={index} className="bg-white rounded-lg shadow-md p-6">
+            <img src={image} alt={`FAQ ${index + 1}`} className="mb-4" />
+            <h3 className="text-2xl font-bold mb-4">
+              {index === 0
+                ? "Transforming User Interactions into a Brand"
+                : index === 1
+                ? "Tailwind CSS for Rapid UI Development"
+                : "Mastering Frontend Architecture"}
+            </h3>
+            <div className="flex flex-wrap items-center text-sm space-x-2">
+              <div className="flex items-center space-x-1">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="black"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21v-2a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v2"></path>
+                </svg>
+                <span>Cardiff Web</span>
+              </div>
 
-            <span className="text-gray-700 font-normal">Cardiff Web</span>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+              <div className="flex items-center space-x-1 ml-auto">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
                   stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3 10H21"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"></path>
+                </svg>
+                <span>10 July 2024</span>
+              </div>
 
-              <span className="text-gray-700 font-normal">10 July 2024</span>
+              <div className="flex items-center space-x-1 ml-auto">
+                <svg
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="black"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M12 6v6l4 2" />
+                </svg>
+                <span>2:00 Min</span>
+              </div>
             </div>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 6V12L16 14"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
 
-              <span className="text-gray-700 font-normal">2:00 Min</span>
+            <p className="text-gray-700 mt-4">
+              {index === 0
+                ? "Learn how to transform user interactions into a cohesive brand experience through effective web development strategies."
+                : index === 1
+                ? "Tailwind CSS speeds up development with utility-first classes. Here's how to harness its full potential."
+                : "Design scalable frontend systems and write clean, modular code that grows with your app."}
+            </p>
+
+            {/* Read More Button */}
+            <div className="mt-4 inline-block">
+              <span className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE]">
+                Read More
+              </span>
+              <span className="block h-[2px] w-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] rounded-full"></span>
             </div>
           </div>
-          <p className="text-gray-700 mt-4">
-            Learn how to transform user interactions into a cohesive brand
-            experience through effective web development strategies.
-          </p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <img src={Image2} alt="" />
-          <h3 className="text-xl font-bold mb-4">
-            Tailwind CSS for Rapid UI Development
-          </h3>
-          <div className="flex items-center space-x-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <span className="text-gray-700 font-normal">Cardiff Web</span>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3 10H21"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <span className="text-gray-700 font-normal">10 July 2024</span>
-            </div>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 6V12L16 14"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <span className="text-gray-700 font-normal">2:00 Min</span>
-            </div>
-          </div>
-
-          <p className="text-gray-700 mt-4">
-            Dive into the fundamentals of React components and how they can be
-            utilized to build dynamic user interfaces.
-          </p>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-6">
-          <img src={Image3} alt="" />
-          <h3 className="text-xl font-bold mb-4">
-            Tailwind CSS for Rapid UI Development
-          </h3>
-          <div className="flex items-center space-x-2">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-
-            <span className="text-gray-700 font-normal">Cardiff Web</span>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M16 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M8 2V6"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M3 10H21"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <span className="text-gray-700 font-normal">10 July 2024</span>
-            </div>
-            <div className="ml-auto flex items-center space-x-2">
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M12 6V12L16 14"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
-              <span className="text-gray-700 font-normal">2:00 Min</span>
-            </div>
-          </div>
-          <p className="text-gray-700 mt-4">
-            Explore how Tailwind CSS can streamline your UI development process
-            with utility-first styling.
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );

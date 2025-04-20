@@ -28,15 +28,48 @@ const Testimonial = () => {
             ></span>
           </h4>
         </div>
-        <h2 className="text-6xl font-semibold text-gray-900 sm:text-6xl mt-2">
+        <h2 className="text-4xl font-semibold text-gray-900 sm:text-6xl mt-2">
           Our Professional Testimonial
         </h2>
       </div>
 
-      <div className="mt-10">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6 bg-white">
+      <div className="mt-10 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-2">
+        {[
+          {
+            name: "James Karl",
+            title: "Ceo Spotify corporate",
+            image: icon2,
+          },
+          {
+            name: "Adam Smith",
+            title: "Marketing Head, YouTube",
+            image: icon1,
+          },
+        ].map((person, index) => (
+          <div
+            key={index}
+            className="relative rounded-lg overflow-hidden"
+            style={{
+              position: "relative",
+              zIndex: 1,
+            }}
+          >
+            {/* Gradient Shadow Simulated Box */}
+            <div
+              className="absolute inset-0 rounded-lg z-0"
+              style={{
+                background:
+                  "linear-gradient(135deg, rgba(147,132,239,0.25), rgba(49,46,254,0.25))",
+                filter: "blur(20px)",
+                top: "-10px",
+                left: "-10px",
+                right: "-10px",
+                bottom: "-10px",
+              }}
+            ></div>
+
+            {/* Card Content */}
+            <div className="p-6 bg-white rounded-lg shadow-md relative z-10">
               <div className="mt-6">
                 <svg
                   width="60"
@@ -58,14 +91,14 @@ const Testimonial = () => {
                       y2="5.23082"
                       gradientUnits="userSpaceOnUse"
                     >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
+                      <stop stopColor="#9384FE" />
+                      <stop offset="1" stopColor="#312EFE" />
                     </linearGradient>
                   </defs>
                 </svg>
 
                 <blockquote className="text-gray-500">
-                  <p className="text-baseline ">
+                  <p className="text-baseline mt-4">
                     "Working with [Your Agency Name] was an absolute
                     game-changer for our business. Their team seamlessly
                     combined creativity and strategy to deliver a website that
@@ -75,91 +108,30 @@ const Testimonial = () => {
                     detail is unmatched. We couldn't be happier with the
                     results!"
                   </p>
-                  <hr className="h-px my-8 bg-gray-400  00 border-0 dark:bg-gray-700"></hr>
+                  <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
                 </blockquote>
-                <div className="flex items-center py-1">
-                  <div className="flex-shrink-0">
-                    <img
-                      className="h-10 w-10 rounded-full"
-                      src={icon2}
-                      alt=""
-                    />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="text-lg font-medium leading-6 text-gray-900">
-                      James Karl
-                    </h3>
-                    <p className="text-sm font-medium leading-5 text-gray-500">
-                      Ceo Spotify corporate
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div className="rounded-lg shadow-lg overflow-hidden">
-            <div className="p-6 bg-white">
-              <div className="mt-6">
-                <svg
-                  width="60"
-                  height="60"
-                  viewBox="0 0 60 60"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M7.89188 47.8894C8.23613 48.4258 8.83125 48.75 9.46838 48.75H22.5C25.6018 48.75 28.125 46.2268 28.125 43.125V30C28.125 26.8982 25.6018 24.375 22.5 24.375H18.7774C20.5187 19.3322 22.0056 16.9172 26.9531 14.8554C27.7789 14.5112 28.2459 13.6324 28.0701 12.7552C27.8944 11.8798 27.1252 11.25 26.2316 11.25H26.2279C15.9062 11.2684 9.97725 15.4065 5.77312 25.5212C4.43119 28.6982 3.75 32.0983 3.75 35.625C3.75 41.0486 5.39062 44.0021 7.89188 47.8894ZM37.5934 48.75H50.625C53.7268 48.75 56.25 46.2268 56.25 43.125V30C56.25 26.8982 53.7268 24.375 50.625 24.375H46.9024C48.6437 19.3322 50.1306 16.9172 55.0781 14.8554C55.9039 14.5112 56.3709 13.6324 56.1951 12.7552C56.0194 11.8798 55.2503 11.25 54.3566 11.25H54.3529C44.0312 11.2684 38.1023 15.4065 33.8981 25.5212C32.5562 28.6982 31.875 32.0983 31.875 35.625C31.875 41.0486 33.5156 44.0021 36.0169 47.8894C36.3611 48.4258 36.9562 48.75 37.5934 48.75Z"
-                    fill="url(#paint0_linear_55_398)"
-                  />
-                  <defs>
-                    <linearGradient
-                      id="paint0_linear_55_398"
-                      x1="39.5192"
-                      y1="36.7995"
-                      x2="21.5164"
-                      y2="5.23082"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stop-color="#9384FE" />
-                      <stop offset="1" stop-color="#312EFE" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <blockquote className="text-gray-500">
-                  <p className="text-baseline">
-                    "Working with [Your Agency Name] was an absolute
-                    game-changer for our business. Their team seamlessly
-                    combined creativity and strategy to deliver a website that
-                    not only looks stunning but also performs exceptionally
-                    well. The user experience they designed has significantly
-                    improved our customer engagement, and their attention to
-                    detail is unmatched. We couldn't be happier with the
-                    results!"
-                  </p>
-                  <hr className="h-px my-8 bg-gray-400  00 border-0 dark:bg-gray-700"></hr>
-                </blockquote>
                 <div className="flex items-center py-1">
                   <div className="flex-shrink-0">
                     <img
                       className="h-10 w-10 rounded-full"
-                      src={icon1}
-                      alt=""
+                      src={person.image}
+                      alt={person.name}
                     />
                   </div>
                   <div className="ml-4">
                     <h3 className="text-lg font-medium leading-6 text-gray-900">
-                      Adam Smith
+                      {person.name}
                     </h3>
                     <p className="text-sm font-medium leading-5 text-gray-500">
-                      Founder of Tech Innovations
+                      {person.title}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -135,12 +135,11 @@ const FAQ_One = () => {
           <img src={message} className="mb-4" />
 
           <h3 className="text-2xl font-semibold mb-3">
-            Do you provide maintenance & <br /> updates after project delivery?
+            Do you provide maintenance & updates after project delivery?
           </h3>
 
           <p className="text-lg leading-relaxed">
-            Learn How Our Expertise Can Drive Your
-            <br /> Business Forward
+            Learn How Our Expertise Can Drive Your Business Forward
             <br />
             <br />
             <span className="bg-white rounded-lg text-center p-5 inline-flex">
