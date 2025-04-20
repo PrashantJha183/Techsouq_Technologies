@@ -4,6 +4,10 @@ import { FaCode } from "react-icons/fa";
 import { BiShapePolygon } from "react-icons/bi";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import arrow from "/src/assets/Images/arrow-right.png";
+import UI from "/src/assets/Images/user-experience.png";
+import web from "/src/assets/Images/web.png";
+import design from "/src/assets/Images/social-engagement.png";
+import consult from "/src/assets/Images/illustrator.png";
 
 function Services() {
   return (
@@ -36,7 +40,8 @@ function Services() {
           {/* UI/UX Design */}
           <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
-              <FiLayout size={28} className="text-white" />
+              {/* <FiLayout size={28} className="text-white" /> */}
+              <img src={UI} />
             </div>
             <h3 className="text-3xl font-semibold mt-6 mb-2">UI/UX Design</h3>
             <p className="text-gray-600 text-lg">
@@ -61,9 +66,10 @@ function Services() {
           {/* Web Development */}
           <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
-              <FaCode size={28} className="text-white" />
+              {/* <FaCode size={28} className="text-white" /> */}
+              <img src={web} />
             </div>
-            <h3 className="text-3xl font-semibold mt-6 mb-2">
+            <h3 className="text-3xl font-semibold mt-6 mb-2 text-nowrap">
               Web Development
             </h3>
             <p className="text-gray-600 text-lg">
@@ -88,7 +94,8 @@ function Services() {
           {/* Logo Design */}
           <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
-              <BiShapePolygon size={28} className="text-white" />
+              {/* <BiShapePolygon size={28} className="text-white" /> */}
+              <img src={design} />
             </div>
             <h3 className="text-3xl font-semibold mt-6 mb-2">Logo Design</h3>
             <p className="text-gray-600 text-lg">
@@ -112,14 +119,14 @@ function Services() {
           {/* Another Service */}
           <div className="bg-white rounded-lg shadow-md pt-12 p-8 text-center relative ">
             <div className="w-16 h-16 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] absolute -top-8 left-1/2 transform -translate-x-1/2 z-20 shadow-lg">
-              <BiShapePolygon size={28} className="text-white" />
+              {/* <BiShapePolygon size={28} className="text-white" /> */}
+              <img src={consult} />
             </div>
-            <h3 className="text-3xl font-semibold mt-6 mb-2">
-              Another Service
-            </h3>
+            <h3 className="text-3xl font-semibold mt-6 mb-2">Consulting</h3>
             <p className="text-gray-600 text-lg">
-              We offer a wide range of additional services tailored to your
-              needs, ensuring your business thrives in every aspect.
+              Leverage our expertise to navigate the complexities of the digital
+              landscape. From strategy development to implementation, we provide
+              actionable insights to help your business succeed.
             </p>
             <a href="#" className="py-4 flex justify-center">
               <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
