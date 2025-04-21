@@ -7,10 +7,12 @@ import Choose from "/src/components/homepage/ChooseUS.jsx";
 import LastPage from "../components/base/LastPage";
 import Testimonial from "../components/base/Testimonial";
 import Choosemore from "../components/homepage/Choosemore";
+import HomepageHeader from "../components/homepage/HomepageHeader";
 
 const HomepageView = () => {
   return (
     <>
+      <HomepageHeader />
       <Home />
       <AboutUS />
       <Services />

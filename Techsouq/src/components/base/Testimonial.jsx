@@ -6,7 +6,7 @@ const Testimonial = () => {
   return (
     <div
       className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8"
-      style={{ fontFamily: "Poppins, sans-serif" }}
+      style={{ fontFamily: "Poppins, sans-serif", padding: "10%" }}
     >
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex justify-center items-center">
@@ -48,23 +48,34 @@ const Testimonial = () => {
         ].map((person, index) => (
           <div
             key={index}
-            className="relative rounded-lg overflow-hidden"
+            className="relative rounded-lg overflow-visible"
             style={{
               position: "relative",
               zIndex: 1,
             }}
           >
-            {/* Gradient Shadow Simulated Box */}
+            {/* Gradient Glow Behind the Card */}
             <div
-              className="absolute inset-0 rounded-lg z-0"
+              className="absolute -inset-4 z-0 rounded-3xl"
               style={{
-                background:
-                  "linear-gradient(135deg, rgba(147,132,239,0.25), rgba(49,46,254,0.25))",
-                filter: "blur(20px)",
-                top: "-10px",
-                left: "-10px",
-                right: "-10px",
-                bottom: "-10px",
+                background: "linear-gradient(135deg, #9384Ef, #312EFE)",
+                right: "10%",
+                height: "60%",
+                top: "-2%",
+                left: "-1%",
+                borderBottom: "none",
+                width: "35%",
+              }}
+            ></div>
+
+            <div
+              className="absolute z-0 rounded-3xl"
+              style={{
+                background: "linear-gradient(135deg, #9384Ef, #312EFE)",
+                bottom: "-2%",
+                right: "-1%",
+                height: "60%",
+                width: "35%",
               }}
             ></div>
 
