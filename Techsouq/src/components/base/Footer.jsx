@@ -5,8 +5,8 @@ import {
   EnvelopeIcon,
   ArrowRightIcon,
 } from "@heroicons/react/24/solid";
-import { FaInstagram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa"; // Import FontAwesome icons
-import logo from "/src/assets/Images/logo.png";
+import { FaInstagram, FaYoutube, FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "/src/assets/Images/TECHSOUQ TECH LOGO/TECHSOUQ TECHS.png";
 
 const Footer = () => {
   return (
@@ -28,7 +28,7 @@ const Footer = () => {
               src={logo}
               alt="Techsouq"
               className="mx-auto md:mx-0"
-              style={{ width: "200px", height: "auto" }}
+              style={{ width: "245px", height: "auto" }}
             />
             <p className="text-black text-lg font-bold mt-4">
               Subscribe For More Updates

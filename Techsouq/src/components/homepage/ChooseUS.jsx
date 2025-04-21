@@ -44,16 +44,79 @@ const Choose = () => {
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-4 mb-4 text-lg">
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-purple-500" size={24} />
+              <div className="flex items-center gap-1">
+                <CheckCircle
+                  size={24}
+                  className="text-[#9384Ef]"
+                  style={{
+                    stroke: "url(#gradientStroke)",
+                  }}
+                />
+                <svg height="0" width="0">
+                  <defs>
+                    <linearGradient
+                      id="gradientStroke"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop stopColor="#9384Ef" offset="0%" />
+                      <stop stopColor="#312EFE" offset="100%" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
                 <span className="text-gray-700">Tailored Strategies</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-purple-500" size={24} />
+              <div className="flex items-center gap-1">
+                <CheckCircle
+                  size={24}
+                  className="text-[#9384Ef]"
+                  style={{
+                    stroke: "url(#gradientStroke)",
+                  }}
+                />
+                <svg height="0" width="0">
+                  <defs>
+                    <linearGradient
+                      id="gradientStroke"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop stopColor="#9384Ef" offset="0%" />
+                      <stop stopColor="#312EFE" offset="100%" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
                 <span className="text-gray-700">Storytelling Approach</span>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle className="text-purple-500" size={24} />
+              <div className="flex items-center gap-1">
+                <CheckCircle
+                  size={24}
+                  className="text-[#9384Ef]"
+                  style={{
+                    stroke: "url(#gradientStroke)",
+                  }}
+                />
+                <svg height="0" width="0">
+                  <defs>
+                    <linearGradient
+                      id="gradientStroke"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop stopColor="#9384Ef" offset="0%" />
+                      <stop stopColor="#312EFE" offset="100%" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+
                 <span className="text-gray-700">Proven Success</span>
               </div>
             </div>

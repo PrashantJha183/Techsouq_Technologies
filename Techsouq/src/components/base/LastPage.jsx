@@ -1,5 +1,5 @@
 import React from "react";
-import Man from "/src/assets/Images/man_two.png";
+import Man from "/src/assets/Images/mans.png";
 import arrow from "/src/assets/Images/arrow-right.png";
 import back from "/src/assets/Images/back.png";
 import { Check } from "lucide-react";

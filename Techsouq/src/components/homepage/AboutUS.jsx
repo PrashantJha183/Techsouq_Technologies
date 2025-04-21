@@ -71,7 +71,7 @@ const AboutUS = () => {
           {/* Overlapping badge on Group image */}
           <div className="absolute top-20 left-10 flex items-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md z-20">
             <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] flex items-center justify-center">
-              <Check size={14} color="white" />
+              <Check size={18} color="white" />
             </div>
             <span className="text-xs sm:text-sm font-semibold">
               We provide best service
@@ -83,7 +83,7 @@ const AboutUS = () => {
             {/* Badge on 'one' image */}
             <div className="relative top-[200px] left-[250px] sm:bottom-[80px] sm:left-[250px] inline-flex items-center justify-center gap-2 bg-white rounded-lg px-2 py-1 shadow-md w-[230px] text-nowrap">
               <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-gradient-to-r from-[#9384Ef] to-[#312EFE] flex items-center justify-center">
-                <Check size={14} color="white" />
+                <Check size={18} color="white" />
               </div>
               <span className="text-xs sm:text-sm font-semibold">
                 Your work is our priority
