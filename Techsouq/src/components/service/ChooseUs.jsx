@@ -1,8 +1,7 @@
 import React from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
-import Man from "/src/assets/Images/2.png";
-import Group from "/src/assets/Images/13.png";
-import back from "/src/assets/Images/Group 1171274849.png";
+import { Link } from "react-router-dom";
+import rename_1 from "/src/assets/Images/rename.png";
 
 const ChooseUs = () => {
   return (
@@ -119,7 +118,7 @@ const ChooseUs = () => {
 
             <div className="flex justify-center md:justify-start py-4">
               <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center gap-4 text-sm">
-                Contact Us Now
+                <Link to="/contact">Contact Us Now</Link>
                 <ArrowRight size={20} className="text-white" />
               </button>
             </div>
@@ -138,7 +137,7 @@ const ChooseUs = () => {
             ></div>
 
             <img
-              src={Man}
+              src={rename_1}
               alt="Why Choose Us"
               className="rounded-xl shadow-lg z-10 relative right-[50px]"
               style={{ width: "100%" }}

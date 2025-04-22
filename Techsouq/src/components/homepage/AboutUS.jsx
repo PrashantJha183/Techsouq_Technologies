@@ -3,6 +3,7 @@ import { ArrowRight, Check } from "lucide-react";
 import Group from "/src/assets/Images/image.png";
 import one from "/src/assets/Images/1.png";
 import back from "/src/assets/Images/Group 1171274849.png";
+import { Link } from "react-router-dom";
 
 const AboutUS = () => {
   return (
@@ -46,10 +47,12 @@ const AboutUS = () => {
           <div className="py-4 text-lg">
             Together, let's redefine what's possible in the digital world.
           </div>
-          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4 text-sm h-6xl w-10xl">
-            Contact Us Now
-            <ArrowRight size={20} color="white" />
-          </button>
+          <Link to="/contact">
+            <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4 text-sm h-6xl w-10xl">
+              Contact Us Now
+              <ArrowRight size={20} color="white" />
+            </button>
+          </Link>
         </div>
 
         {/* Image composition */}

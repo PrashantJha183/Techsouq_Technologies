@@ -1,14 +1,10 @@
 import FAQ_One from "/src/components/base/FAQ_One.jsx";
-
 import FAQ_two from "/src/components/base/FAQ_two.jsx";
-
 import LastPage from "../components/base/LastPage";
 import Testimonial from "../components/base/Testimonial";
 import Hero from "../components/about/Hero";
-
 import Header from "../components/base/Header";
 import AboutUs from "../components/about/AboutUs";
-// import ChooseUs from "../components/about/ChooseUs";
 
 const AboutUsView = () => {
   return (
@@ -16,7 +12,6 @@ const AboutUsView = () => {
       <Header />
       <Hero />
       <AboutUs />
-      {/* <ChooseUs /> */}
       <Testimonial />
       <FAQ_One />
       <FAQ_two />

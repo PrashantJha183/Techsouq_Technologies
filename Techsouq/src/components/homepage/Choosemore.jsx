@@ -49,7 +49,7 @@ const Choosemore = () => {
             ))}
           </div>
 
-          <h2 className="md:text-7xl text-4xl font-bold md:leading-snug leading-snug">
+          <h2 className="md:text-6xl text-6xl font-bold md:leading-snug leading-snug">
             Transfer a Local
             <br /> Business into a{" "}
             <span className="bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text text-6xl mt-2 text-nowrap">
@@ -66,7 +66,27 @@ const Choosemore = () => {
             ].map((point, id) => (
               <li key={id} className="flex items-start gap-3">
                 <span className="min-w-[24px] min-h-[24px] mt-1">
-                  <CheckCircle size={24} className="text-purple-950" />
+                  <CheckCircle
+                    size={24}
+                    className="text-[#9384Ef]"
+                    style={{
+                      stroke: "url(#gradientStroke)",
+                    }}
+                  />
+                  <svg height="0" width="0">
+                    <defs>
+                      <linearGradient
+                        id="gradientStroke"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop stopColor="#9384Ef" offset="0%" />
+                        <stop stopColor="#312EFE" offset="100%" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
                 </span>
                 <p>{point}</p>
               </li>
@@ -82,10 +102,10 @@ const Choosemore = () => {
 
             {/* Name and Designation */}
             <div>
-              <h3 className="text-lg font-medium text-gray-900">Adam Smith</h3>
-              <p className="text-sm text-gray-500">
-                Founder of Tech Innovations
-              </p>
+              <h3 className="text-xl font-medium text-gray-900">
+                Michel James
+              </h3>
+              <p className="text-lg text-gray-500">Business Owner IT</p>
             </div>
           </div>
         </div>

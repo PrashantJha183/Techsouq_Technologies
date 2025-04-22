@@ -2,6 +2,7 @@ import React from "react";
 import Hero_Image from "/src/assets/Images/Hero Image.png";
 import Circle from "/src/assets/Images/Circle.png";
 import Ellipse from "/src/assets/Images/Ellipse 5.png";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -718,38 +719,40 @@ const Home = () => {
             robust websites that elevate brands online. Empowering businesses
             with innovative digital solutions.
           </p>
-          <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4">
-            Book a Consultation
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clipPath="url(#clip0_55_1110)">
-                <path
-                  d="M0.953125 9.6377H16.7865"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0_55_1110">
-                  <rect width="20" height="20" fill="white" />
-                </clipPath>
-              </defs>
-            </svg>
-          </button>
+          <Link to="/contact">
+            <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold btn text-white px-8 py-3 rounded-md flex justify-center gap-4 mt-10">
+              Book a Consultation
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clipPath="url(#clip0_55_1110)">
+                  <path
+                    d="M0.953125 9.6377H16.7865"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M11.6641 4.16675L17.4974 10.0001L11.6641 15.8334"
+                    stroke="white"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_55_1110">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
@@ -757,29 +760,3 @@ const Home = () => {
 };
 
 export default Home;
-
-{
-  /* <div
-              className="absolute w-full h-full flex justify-center items-center z-100 "
-              style={{
-                bottom: "30%",
-                right: "50%",
-              }}
-            >
-              <svg
-                width="18"
-                height="19"
-                viewBox="0 0 18 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.9976 4.50757L6.74756 12.76L2.99756 9.00891"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div> */
-}

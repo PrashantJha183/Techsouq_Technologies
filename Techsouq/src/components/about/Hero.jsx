@@ -1,5 +1,6 @@
 import React from "react";
 import image from "/src/assets/Images/images.png";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -20,21 +21,23 @@ const Hero = () => {
 
         {/* Content */}
         <div className="flex flex-col items-center justify-center text-center text-white relative z-20 h-full px-6 sm:px-12">
-          <button className="btn px-4 py-2 sm:px-6 sm:py-3 border border-white rounded-xl text-sm sm:text-base">
+          <button className="btn px-4 py-2 sm:px-6 sm:py-3 border border-white rounded-full text-lg sm:text-base">
             Welcome to Techsouq
           </button>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mt-4">
-            See Our Valuable Case Study With Us
+          <h1 className="text-6xl sm:text-4xl lg:text-6xl font-bold mt-4">
+            A captivating statement about
+            <br />
+            <span className="mt-4 block t-50"> your mission or value</span>
           </h1>
-          <h4 className="text-sm sm:text-base lg:text-lg mt-4 max-w-4xl">
+          <h4 className="text-lg sm:text-lg lg:text-lg mt-4 max-w-4xl">
             At Techsouq, we believe in transforming ideas into digital
             excellence. Driven by creativity and defined by results, we combine
             innovation, design, and technology to empower businesses in the
             digital landscape.
           </h4>
           <button className="btn px-6 py-3 rounded-xl bg-white flex items-center space-x-2 mt-6">
-            <span className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] text-transparent bg-clip-text font-bold text-sm sm:text-base">
-              Book a consultation
+            <span className="bg-gradient-to-r from-[#9384FE] to-[#312EFE] text-transparent bg-clip-text font-bold text-sm sm:text-sm">
+              <Link to="/contact">Book a consultation</Link>
             </span>
             <svg
               xmlns="http://www.w3.org/2000/svg"

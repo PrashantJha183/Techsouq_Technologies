@@ -1,7 +1,7 @@
 import FAQ_One from "/src/components/base/FAQ_One.jsx";
 import FAQ_two from "/src/components/base/FAQ_two.jsx";
 import LastPage from "../components/base/LastPage";
-import First from "../components/service/First";
+import Hero from "../components/service/Hero";
 import Header from "../components/base/Header";
 import ChooseUs from "../components/service/ChooseUs";
 import Choose from "../components/service/Choose";
@@ -11,7 +11,7 @@ const ServiceView = () => {
   return (
     <>
       <Header />
-      <First />
+      <Hero />
       <Choose />
       <ChooseUs />
       <Services />
