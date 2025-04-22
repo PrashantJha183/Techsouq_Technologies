@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
-
+import { Link } from "react-router-dom";
 import message from "/src/assets/Images/Group.png";
 import arrow from "/src/assets/Images/arrow-right.png";
 
@@ -144,7 +144,7 @@ const FAQ_One = () => {
             <br />
             <span className="bg-white rounded-lg text-center p-5 inline-flex">
               <button className="h-[30px] w-[271px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#9384Ef] to-[#312EFE] text-sm flex items-center justify-center gap-2">
-                Book your free call now
+                <Link to="/contact">Book your free call now</Link>
                 <img src={arrow} alt="arrow" className="h-5 w-5" />
               </button>
             </span>

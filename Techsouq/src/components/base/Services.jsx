@@ -8,6 +8,7 @@ import UI from "/src/assets/Images/user-experience.png";
 import web from "/src/assets/Images/web.png";
 import design from "/src/assets/Images/social-engagement.png";
 import consult from "/src/assets/Images/illustrator.png";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
@@ -52,7 +53,7 @@ function Services() {
             </p>
             <a href="#" className="py-4 flex justify-center">
               <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
-                Learn More
+                <Link to="/service">Learn More</Link>
                 <img
                   src={arrow}
                   alt="arrow"
@@ -80,7 +81,7 @@ function Services() {
             </p>
             <a href="#" className="py-4 flex justify-center">
               <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
-                Learn More
+                <Link to="/service">Learn More</Link>
                 <img
                   src={arrow}
                   alt="arrow"
@@ -105,7 +106,7 @@ function Services() {
             </p>
             <a href="#" className="py-4 flex justify-center">
               <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
-                Learn More
+                <Link to="/service">Learn More</Link>
                 <img
                   src={arrow}
                   alt="arrow"
@@ -130,7 +131,7 @@ function Services() {
             </p>
             <a href="#" className="py-4 flex justify-center">
               <div className="flex items-center gap-2 font-semibold btn bg-gradient-to-r text-transparent from-[#9384Ef] to-[#312EFE] bg-clip-text">
-                Learn More
+                <Link to="/service">Learn More</Link>
                 <img
                   src={arrow}
                   alt="arrow"
@@ -148,7 +149,9 @@ function Services() {
             href="#"
             className="inline-flex items-center justify-center bg-gradient-to-r from-[#9384Ef] to-[#312EFE] text-white py-3 px-6 rounded-md hover:bg-[#1e1dbd] transition-all text-sm font-bold"
           >
-            <span>Contact Us Now</span>
+            <Link to="/contact">
+              <span>Contact Us Now</span>
+            </Link>
             <AiOutlineArrowRight className="ml-2" size={20} />
           </a>
         </div>

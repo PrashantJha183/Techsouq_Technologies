@@ -28,7 +28,7 @@ const Testimonial = () => {
             ></span>
           </h4>
         </div>
-        <h2 className="text-4xl font-semibold text-gray-900 sm:text-6xl mt-2">
+        <h2 className="text-6xl font-semibold text-gray-900 sm:text-6xl mt-2">
           Our Professional Testimonial
         </h2>
       </div>

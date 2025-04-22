@@ -1,8 +1,9 @@
 import React from "react";
 import { ArrowRight, Check, CheckCircle } from "lucide-react";
-import Group from "/src/assets/Images/image.png";
-import one from "/src/assets/Images/1.png";
 import back from "/src/assets/Images/Group 1171274849.png";
+import { Link } from "react-router-dom";
+import rename from "/src/assets/Images/rename.png";
+import rename_6 from "/src/assets/Images/rename_6.png";
 
 const Choose = () => {
   return (
@@ -69,7 +70,7 @@ const Choose = () => {
             Together, let's redefine what's possible in the digital world.
           </div>
           <button className="bg-gradient-to-r from-[#9384Ef] to-[#312EFE] font-semibold text-white px-8 py-3 rounded-md flex items-center justify-center gap-4 text-sm h-6xl w-10xl">
-            Contact Us Now
+            <Link to="/contact">Contact Us Now</Link>
             <ArrowRight size={20} color="white" />
           </button>
         </div>
@@ -85,7 +86,7 @@ const Choose = () => {
 
           {/* Group image (on top of back) */}
           <img
-            src={Group}
+            src={rename_6}
             alt="group"
             className="relative z-10 rounded-xl w-full max-w-[400px]"
           />
@@ -113,7 +114,7 @@ const Choose = () => {
             </div>
 
             <img
-              src={one}
+              src={rename}
               alt="overlay"
               className="rounded-lg w-[200px] sm:w-[300px] h-auto"
             />
