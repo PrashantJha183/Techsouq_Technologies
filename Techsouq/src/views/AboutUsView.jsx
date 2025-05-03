@@ -5,6 +5,7 @@ import Testimonial from "../components/base/Testimonial";
 import Hero from "../components/about/Hero";
 import Header from "../components/base/Header";
 import AboutUs from "../components/about/AboutUs";
+import Team from "../components/about/Team";
 
 const AboutUsView = () => {
   return (
@@ -12,6 +13,7 @@ const AboutUsView = () => {
       <Header />
       <Hero />
       <AboutUs />
+      <Team />
       <Testimonial />
       <FAQ_One />
       <FAQ_two />

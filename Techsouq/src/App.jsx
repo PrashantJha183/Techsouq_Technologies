@@ -4,9 +4,10 @@ import About from "./views/AboutUsView";
 import Service from "./views/ServiceView";
 import Pricing from "./views/Pricingview";
 import CaseStudy from "./views/CaseStudyView";
-// import Blog from "./views/BlogView";
+import Privacy from "./components/base/Privacy";
 import Contact from "./views/ContactView";
 import Footer from "./components/base/Footer";
+import TermsAndConditions from "./components/base/TermsAndConditions";
 import "./App.css";
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/case-study" element={<CaseStudy />} />
-        {/* <Route path="/blog" element={<Blog />} /> */}
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<TermsAndConditions />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
