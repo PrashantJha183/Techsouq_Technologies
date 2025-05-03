@@ -110,7 +110,7 @@ const Testimonial = () => {
 
                 <blockquote className="text-gray-500">
                   <p className="text-baseline mt-4">
-                    "Working with [Your Agency Name] was an absolute
+                    "Working with Techsouq Technologies was an absolute
                     game-changer for our business. Their team seamlessly
                     combined creativity and strategy to deliver a website that
                     not only looks stunning but also performs exceptionally
@@ -119,7 +119,7 @@ const Testimonial = () => {
                     detail is unmatched. We couldn't be happier with the
                     results!"
                   </p>
-                  <hr className="h-px my-8 bg-gray-300 border-0 dark:bg-gray-700" />
+                  <hr className="h-px my-8 bg-gray-300 border-0 dark:text-gray-600" />
                 </blockquote>
 
                 <div className="flex items-center py-1">
