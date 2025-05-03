@@ -1,37 +1,43 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import Shifan from "/src/assets/Images/Shifan.jpg";
+import Munaf from "/src/assets/Images/Munaf.jpg";
+import Prashant from "/src/assets/Images/Prashant_Jha.jpg";
+import Kinjal from "/src/assets/Images/13.png";
+import Pravin from "/src/assets/Images/Pravin.jpg";
+import Dipak from "/src/assets/Images/13.png";
 
 const teamMembers = [
   {
     name: "Shifan Shivani",
     role: "Co-founder & CEO",
-    image: "/src/assets/Images/Shifan.jpg",
+    image: Shifan,
   },
   {
     name: "Munaf Shivani",
     role: "Co-founder & Managing Director",
-    image: "/src/assets/Images/Munaf.jpg",
+    image: Munaf,
   },
   {
     name: "Prashant Jha",
     role: "Full Stack Web Developer",
-    image: "/src/assets/Images/Prashant_Jha.jpg",
+    image: Prashant,
   },
   {
     name: "Kinjal",
     role: "Full Stack Web Developer",
-    image: "/src/assets/Images/13.png",
+    image: Kinjal,
   },
   {
     name: "Pravin Der",
     role: "UI/UX Designer",
-    image: "/src/assets/Images/Pravin.jpg",
+    image: Pravin,
   },
 
   {
     name: "Dipak",
     role: "Graphic Designer",
-    image: "/src/assets/Images/13.png",
+    image: Dipak,
   },
 ];
 
