@@ -4,7 +4,7 @@ import About from "./views/AboutUsView";
 import Service from "./views/ServiceView";
 import Pricing from "./views/Pricingview";
 import CaseStudy from "./views/CaseStudyView";
-import Blog from "./views/BlogView";
+// import Blog from "./views/BlogView";
 import Contact from "./views/ContactView";
 import Footer from "./components/base/Footer";
 import "./App.css";
@@ -18,7 +18,7 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/case-study" element={<CaseStudy />} />
-        <Route path="/blog" element={<Blog />} />
+        {/* <Route path="/blog" element={<Blog />} /> */}
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
