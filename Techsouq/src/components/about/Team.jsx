@@ -23,21 +23,11 @@ const teamMembers = [
     role: "Full Stack Web Developer",
     image: Prashant,
   },
-  {
-    name: "Kinjal",
-    role: "Full Stack Web Developer",
-    image: Kinjal,
-  },
+
   {
     name: "Pravin Der",
     role: "UI/UX Designer",
     image: Pravin,
-  },
-
-  {
-    name: "Dipak",
-    role: "Graphic Designer",
-    image: Dipak,
   },
 ];
 
